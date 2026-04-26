@@ -6,6 +6,5 @@ int main() {
     double a[100], b[100], s = 0;
     cout << "Размерность: ";
     cin >> n;
-    
 }
 
