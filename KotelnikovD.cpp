@@ -19,5 +19,9 @@ int main() {
         cout << "Ошибка ввода!" << endl;
         return 1;
     }
+    double sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum = sum + a[i] * b[i];
+    }
 }
 
