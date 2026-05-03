@@ -23,5 +23,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         sum = sum + a[i] * b[i];
     }
+    cout << "\nСкалярное произведение = " << sum << endl;
 }
 
