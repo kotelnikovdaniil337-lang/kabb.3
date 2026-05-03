@@ -24,6 +24,9 @@ int main() {
         sum = sum + a[i] * b[i];
     }
     cout << "\nСкалярное произведение = " << sum << endl;
-    
+    cout << "\nНажмите Enter для выхода...";
+    cin.get();
+    cin.get();
+    return 0;
 }
 
