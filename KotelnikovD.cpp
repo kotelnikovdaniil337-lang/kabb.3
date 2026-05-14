@@ -59,3 +59,12 @@ int main() {
             filtered.push_back(x);
         }
     }
+     cout << "\nОтфильтрованный массив (в пределах ±1 СКО):\n";
+    if (filtered.empty()) {
+        cout << "Все элементы удалены\n";
+    } else {
+        for (double x : filtered) {
+            cout << x << " ";
+        }
+        cout << endl;
+    }
