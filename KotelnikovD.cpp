@@ -1,62 +1,11 @@
 #include <iostream>
+#include <vector>
+#include <cmath>
+#include <random>
 using namespace std;
 
 int main() {
-    const int N = 3;
-    double A[N][N], B[N][N], C[N][N];
-     cout << "1 — Ручной ввод, 2 — Готовые матрицы. Выберите: ";
-    int choice;
+    int n, choice;
+    vector<double> arr, filtered;
+    cout << "1 — Ручной ввод, 2 — Случайные числа. Выберите: ";
     cin >> choice;
-    if (choice == 1) {
-         cout << "Введите матрицу A (9 чисел): ";
-        for (int i = 0; i < N; i++)
-            for (int j = 0; j < N; j++)
-                cin >> A[i][j];
-        cout << "Введите матрицу B (9 чисел): ";
-        for (int i = 0; i < N; i++)
-            for (int j = 0; j < N; j++)
-                cin >> B[i][j];
-    } else {
-        double testA[N][N] = {{1, 2, 3}, {0, 1, 4}, {5, 6, 0}};
-        double testB[N][N] = {{2, 0, 1}, {3, 1, 0}, {1, 2, 1}};
-        for (int i = 0; i < N; i++)
-            for (int j = 0; j < N; j++) {
-                A[i][j] = testA[i][j];
-                B[i][j] = testB[i][j];
-            }
-        cout << "Использованы готовые матрицы\n";
-    }
-    cout << "\nМатрица A:\n";
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++)
-            cout << A[i][j] << " ";
-        cout << endl;
-    }
-    cout << "\nМатрица B:\n";
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++)
-            cout << B[i][j] << " ";
-        cout << endl;
-    }
-     for (int i = 0; i < N; i++)
-        for (int j = 0; j < N; j++) {
-            C[i][j] = 0;
-            for (int k = 0; k < N; k++)
-                C[i][j] += A[i][k] * B[k][j];
-        }
-        cout << "\nРезультат A × B:\n";
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++)
-            cout << C[i][j] << " ";
-        cout << endl;
-    }
-    double det = C[0][0] * (C[1][1] * C[2][2] - C[1][2] * C[2][1]) -
-               C[0][1] * (C[1][0] * C[2][2] - C[1][2] * C[2][0]) +
-               C[0][2] * (C[1][0] * C[2][1] - C[1][1] * C[2][0]);
-            cout << "\nОпределитель матрицы C: " << det << endl;
-            cout << "\nНажмите Enter для выхода...";
-    cin.ignore();
-    cin.get();
-
-    return 0;
-}
