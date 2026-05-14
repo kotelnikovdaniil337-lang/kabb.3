@@ -25,3 +25,8 @@ int main() {
         cin >> x;
         v2.push_back(x);
     }
+    cout << "\nИсходный вектор 1: ";
+    for (double x : v1) cout << x << " ";
+    cout << "\nИсходный вектор 2: ";
+    for (double x : v2) cout << x << " ";
+    cout << endl;
