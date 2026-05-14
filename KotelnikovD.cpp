@@ -44,3 +44,9 @@ int main() {
             for (int k = 0; k < N; k++)
                 C[i][j] += A[i][k] * B[k][j];
         }
+        cout << "\nРезультат A × B:\n";
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++)
+            cout << C[i][j] << " ";
+        cout << endl;
+    }
