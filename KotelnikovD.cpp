@@ -48,4 +48,6 @@ int main() {
         variance += (x - mean) * (x - mean);
     }
     variance /= n; 
-    double std_dev = sqrt(variance); 
+    double std_dev = sqrt(variance);
+    cout << "\nСреднее значение: " << mean << endl;
+    cout << "СКО: " << std_dev << endl;
