@@ -41,3 +41,8 @@ int main() {
     }
     for (double x : v1) v1_norm.push_back(x / len1);
     for (double x : v2) v2_norm.push_back(x / len2);
+    cout << "Нормализованный вектор 1: ";
+    for (double x : v1_norm) cout << x << " ";
+    cout << "\nНормализованный вектор 2: ";
+    for (double x : v2_norm) cout << x << " ";
+    cout << endl;
