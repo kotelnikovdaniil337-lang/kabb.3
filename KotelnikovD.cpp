@@ -37,3 +37,9 @@ int main() {
         cout << arr[i] << " ";
     }
     cout << endl;
+    cout << "\nНажмите Enter для выхода...";
+    cin.ignore();
+    cin.get();
+
+    return 0;
+}
