@@ -55,3 +55,8 @@ int main() {
     double angle_rad = acos(dot_product); 
     double angle_deg = angle_rad * 180.0 / M_PI; 
     cout << "\nУгол между векторами: " << angle_deg << " градусов\n";
+    cout << "Нажмите Enter для выхода...";
+    cin.ignore();
+    cin.get();
+    return 0;
+}
