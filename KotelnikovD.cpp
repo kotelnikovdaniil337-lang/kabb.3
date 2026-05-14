@@ -7,5 +7,6 @@ using namespace std;
 int main() {
     int n, choice;
     vector<double> arr, filtered;
-    cout << "1 — Ручной ввод, 2 — Случайные числа. Выберите: ";
+    cout << "=== Расчёт СКО и фильтрация массива ===\n";
+    cout << "1 — Ручной ввод\n2 — Случайная генерация\nВыберите: ";
     cin >> choice;
