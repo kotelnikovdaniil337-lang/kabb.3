@@ -35,8 +35,17 @@ int main() {
             arr.push_back(dist(gen));
         }
     }
-     cout << "\nИсходный массив:\n";
+    cout << "\nИсходный массив:\n";
     for (double x : arr) {
         cout << x << " ";
     }
     cout << endl;
+    double sum = 0;
+    for (double x : arr) sum += x;
+    double mean = sum / n;
+    double variance = 0;
+    for (double x : arr) {
+        variance += (x - mean) * (x - mean);
+    }
+    variance /= n; 
+    double std_dev = sqrt(variance); 
