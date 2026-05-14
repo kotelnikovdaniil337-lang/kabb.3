@@ -46,3 +46,11 @@ int main() {
     cout << "\nНормализованный вектор 2: ";
     for (double x : v2_norm) cout << x << " ";
     cout << endl;
+    double dot_product = 0;
+    for (int i = 0; i < n; i++) {
+        dot_product += v1_norm[i] * v2_norm[i];
+    }
+    if (dot_product > 1) dot_product = 1;
+    if (dot_product < -1) dot_product = -1;
+    double angle_rad = acos(dot_product); 
+    double angle_deg = angle_rad * 180.0 / M_PI; 
