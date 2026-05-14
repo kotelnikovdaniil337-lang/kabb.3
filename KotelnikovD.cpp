@@ -30,3 +30,14 @@ int main() {
     cout << "\nИсходный вектор 2: ";
     for (double x : v2) cout << x << " ";
     cout << endl;
+    double len1 = 0, len2 = 0;
+    for (double x : v1) len1 += x * x;
+    for (double x : v2) len2 += x * x;
+    len1 = sqrt(len1);
+    len2 = sqrt(len2);
+    if (len1 == 0 || len2 == 0) {
+        cout << "Ошибка: один из векторов нулевой, угол не определён!\n";
+        return 1;
+    }
+    for (double x : v1) v1_norm.push_back(x / len1);
+    for (double x : v2) v2_norm.push_back(x / len2);
