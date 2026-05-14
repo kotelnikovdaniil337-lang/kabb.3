@@ -68,3 +68,9 @@ int main() {
         }
         cout << endl;
     }
+    cout << "\nНажмите Enter для выхода...";
+    cin.ignore();
+    cin.get();
+
+    return 0;
+}
