@@ -35,3 +35,8 @@ int main() {
             arr.push_back(dist(gen));
         }
     }
+     cout << "\nИсходный массив:\n";
+    for (double x : arr) {
+        cout << x << " ";
+    }
+    cout << endl;
