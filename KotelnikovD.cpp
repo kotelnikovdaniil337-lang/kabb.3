@@ -51,3 +51,11 @@ int main() {
     double std_dev = sqrt(variance);
     cout << "\nСреднее значение: " << mean << endl;
     cout << "СКО: " << std_dev << endl;
+     double lower_bound = mean - std_dev;
+    double upper_bound = mean + std_dev;
+
+    for (double x : arr) {
+        if (x >= lower_bound && x <= upper_bound) {
+            filtered.push_back(x);
+        }
+    }
